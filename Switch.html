@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- make fab icon correct -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechTrove</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 0;
+      text-align: center;
+      color: #ffffff;
+      background-image: url();
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .navbar {
+      background-color: #1a237e;
+      padding: 10px 0;
+    }
+    .navdiv ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+    .navdiv ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+    .navdiv ul li a:hover {
+      background-color: #3949ab;
+      color: white;
+    }
+    .login-container {
+        margin: 100px auto;
+        width: 300px;
+        padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px navy;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-container input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background: #1a237e;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background: #3949ab;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #0d0041;
+      border-radius: 12px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+  
+    .back-button a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .back-button:hover {
+      background-color: rgb(255, 26, 1);
+    }
+  
+    footer {
+      background-color: #1a237e;
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      color: white;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navdiv">
+        <ul>
+          <li><a href="Homepage.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="Shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+          <li><a href="About.html"><i class="fa-solid fa-envelope"></i> About Us</a></li>
+          <li><a href="Switch.html"><i class="fa-solid fa-user"></i> Login</a></li>
+          <li><a href="Signin.html"><i class="fa-solid fa-user-plus"></i> Signin</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <button class="back-button">
+    <a href="welcomepage.html">
+      <i class="fas fa-hand-point-left"></i> Back
+    </a>
+  </button>
+
+  <div class="login-container">
+    <h2>Login to TechTrove Nepal</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 TechTroveNepal. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/ronb" target="_blank" style="color: #1877F2;"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/YourProfile" target="_blank" style="color: #E4405F;"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/YourNumber" target="_blank" style="color: #25D366;"><i class="fab fa-whatsapp"></i></a>
+      <a href="viber://chat?number=YourNumber" target="_blank" style="color: #7360F2;"><i class="fab fa-viber"></i></a>
+      <a href="https://www.linkedin.com/in/YourProfile" target="_blank" style="color: #0077B5;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.reddit.com/user/YourProfile" target="_blank" style="color: #FF4500;"><i class="fab fa-reddit"></i></a>
+      <a href="https://www.tiktok.com/@YourProfile" target="_blank" style="color: #000000;"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

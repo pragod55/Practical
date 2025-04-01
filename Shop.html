@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>TechTroveNepal - Gadget Shop</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      position: relative;
+    }
+    .navbar {
+      width: 100%;
+      background-color: #03264d;
+      padding: 30px 0;
+      min-height: 80px;
+      position: relative;
+    }
+    .navdiv ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navdiv ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .navdiv ul li a:hover {
+      background-color: #3949ab;
+      color: white;
+    }
+    .back-button {
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      background-color: #03264d;
+      border-radius: 5px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    .back-button a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      background-color: #ff5733;
+    }
+    header {
+      background-color: #03264d;
+      color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .offer-banner {
+      background-color: #411005;
+      color: rgb(134, 125, 125);
+      padding: 15px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+    select, input[type="number"], button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #03264d;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff5733;
+    }
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .product {
+      background-color: white;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 300px;
+      text-align: left;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h2 {
+      color: #333;
+    }
+    .product p {
+      color: #666;
+    }
+    .product button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .product button:hover {
+      background-color: #0056b3;
+    }
+    .price, .delivery, .discount {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+    .price {
+      color: #28a745;
+      font-weight: bold;
+    }
+    .delivery {
+      color: #ffc107;
+    }
+    .discount {
+      color: #dc3545;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #ef0000;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <ul>
+        <li><a href="Homepage.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="Shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+        <li><a href="About.html"><i class="fa-solid fa-envelope"></i> About Us</a></li>
+        <li><a href="Switch.html"><i class="fa-solid fa-user"></i> Login</a></li>
+        <li><a href="Signin.html"><i class="fa-solid fa-user-plus"></i> Signin</a></li>
+      </ul>
+    </div>
+    <button class="back-button">
+      <a href="welcomepage.html"><i class="fas fa-hand-point-left"></i> Back</a>
+    </button>
+  </nav>
+  <header>
+    <h1>Welcome to TechTroveNepal</h1>
+    <p>Your destination for the latest gadgets</p>
+  </header>
+  <div class="offer-banner">
+    <p>🌟 Buy 1 Get 1 Free on Selected Gadgets! Hurry, offer valid till stocks last! 🌟</p>
+  </div>
+  <form>
+    <label for="category">Select Category:</label>
+    <select id="category" name="category">
+      <option value="phones">Phones</option>
+      <option value="laptops">Laptops</option>
+      <option value="others">Others</option>
+    </select>
+    <label for="price">Set Price Range:</label>
+    <input type="number" id="min-price" name="min-price" placeholder="Min Price" />
+    <input type="number" id="max-price" name="max-price" placeholder="Max Price" />
+    <button type="submit">Apply Filters</button>
+  </form>
+  <div class="container">
+    <div class="product">
+      <img src="Iphone.jpg" alt="Mobile Phone">
+      <h2>Iphone 16 </h2>
+      <p>Latest smartphone with cutting-edge features</p>
+      <p class="price">Rs 150000</p>
+      <p class="delivery">Fast Delivery: 3-5 days</p>
+      <p class="discount">10% Off</p>
+      <button>Shop now</button>
+    </div>
+    <div class="product">
+      <img src="laptop1.jpg" alt="Laptop">
+      <h2>Acer Swit Go 14</h2>
+      <p>High-performance laptop</p>
+      <p class="price">Rs 11000</p>
+      <p class="delivery">Free Delivery</p>
+      <p class="discount">15% Off</p>
+      <button>Shop now</button>
+    </div>
+    <div class="product">
+      <img src="tv.jpg" alt="Television">
+      <h2>Smart TV 65 Inch</h2>
+      <p>Ultra HD Smart TV with latest technology</p>
+      <p class="price">Rs 119000</p>
+      <p class="delivery">Free Delivery</p>
+      <p class="discount">5% Off</p>
+      <button>Shop now</button>
+    </div>
+    <div class="product">
+      <img src="watch.jpg" alt="Smart Watch">
+      <h2>Apple Smart Watch Series 7</h2>
+      <p>Track fitness, receive notifications, and more</p>
+      <p class="price">Rs 55000</p>
+      <p class="delivery">Free Delivery</p>
+      <p class="discount">20% Off</p>
+      <button>Shop now</button>
+    </div>
+    <div class="product">
+      <img src="blue.jpg" alt="Bluetooth Speaker">
+      <h2>JBL Portable Bluetooth Speaker</h2>
+      <p>Enjoy high-quality sound wherever you go</p>
+      <p class="price">Rs 9900</p>
+      <p class="delivery">Fast Delivery: 2-3 days</p>
+      <p class="discount">Buy 2 Get 1 Free</p>
+      <button>Shop now</button>
+    </div>
+    <div class="product">
+      <img src="earbuds.jpg" alt="Wireless Earbuds">
+      <h2>Ultima Wireless Earbuds 2.0</h2>
+      <p>Noise-canceling earbuds with great sound</p>
+      <p class="price">Rs 7999</p>
+      <p class="delivery">Free Delivery</p>
+      <p class="discount">10% Off</p>
+      <button>Shop now</button>
+    </div>
+    <div class="product">
+      <img src="snapdragon.jpg" alt="Logitech Keyboard">
+      <h2>Logitech K780 Multi-Device Wireless Keyboard</h2>
+      <p>Type comfortably on your laptop, tablet, or smartphone with Logitech's versatile multi-device keyboard.</p>
+      <p class="price">Rs 3500</p>
+      <p class="delivery">Free Delivery</p>
+      <p class="discount">15% Off</p>
+      <button>Shop now</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 TechTroveNepal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
